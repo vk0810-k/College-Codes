@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ng-required</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src=" "></script>
+</head>
+<!-- <body ng-app="" >
+    <form action="" name="myForm">
+        Click here to make the input field required:
+        <input type="checkbox" ng-model="myVar">
+        <br>
+        <br>
+        <input name="myInput" ng-model="myInput" ng-required="myVar">
+        <h1 ng-if="!myForm.myInput.$valid">The input cannot be empty.</h1>
+    </form>
+    <p>
+        <strong>Note: </strong>
+        This example shows an error if input field is empty <strong>and</strong> the checkbox is checked for "required".
+    </p>
+</body> -->
+<!-- <body ng-app="myApp" ng-controller="myCtrl">
+    <form ng-submit="myFunc()">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <p>{{myTxt}}</p>
+    <p>ng-submit example</p>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) 
+        {
+            $scope.myTxt = "Nothing is submitted.";
+            $scope.myFunc = function() 
+            {
+                $scope.myTxt = "Submit button clicked successfully.";
+            }
+        });
+    </script>
+</body> -->
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		{{firstName + " " + lastName}}
+	</div>
+	<script>
+		var app = angular.module("myApp", []);
+		app.controller("myCtrl", function($scope) 
+			{
+				$scope.firstName = "NMIMS";
+				$scope.lastName = "Navi Mumbai";
+			});
+	</script>
+</body>
+</html>

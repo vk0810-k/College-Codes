@@ -1,0 +1,310 @@
+<!doctype html>
+<head>
+  <title>STME Time-Table</title>
+  <style>
+    * {
+        font-family: 'verdana' !important;
+        text-align: center;
+    }
+
+    table.table2, table.table2 th, table.table2 td {
+        border: 0.5px solid black;
+        border-collapse: collapse;
+    }
+
+    /* .tab2, .th2, .td2 {
+        border: 0.5px solid black;
+        border-collapse: collapse;
+    } */
+
+    table {
+        width:100%;
+        table-layout:fixed;
+        
+    }
+
+    td {    
+        word-wrap:break-word;
+    }
+    /* th, td {
+         background-color: #96D4D4;
+    } */
+
+
+    .space{
+        padding-top: 40px;
+    }
+
+    #cn{
+        background-color:#C6E0B4;        
+    }
+
+    #is {
+        background-color:#DBDBDB;        
+    }
+    
+    #ai {
+        background-color:#F0B4C4;
+    }
+
+    #fca {
+        background-color:#B084D1;
+    }
+    #bcvs {
+        background-color:#B4C6E7;
+    }
+    #dma {
+        background-color:#FFD966;
+    }
+    #mwa {
+        background-color:#F8CBAD;
+    }
+    /* #blc1,#blc2,#blc3{
+        display: inline;
+    } */
+    #blc1{
+        text-align: left;
+    }
+    #blc2{
+        text-align: center;
+    }
+    #blc3{
+        text-align: right;
+    }
+    
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <table style="border:'0' !important">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td rowspan="3"><img src="Nmims-Logo1.png" width="200px"/></td>
+                        <td colspan="4"><b>School of Technology Management & Engineering | Navi Mumbai Campus</b></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="2"><b>Course: B Tech (CSBS)</b></td>
+                        <td colspan="2"><b>AY 2021-22</b></td>
+                        <td colspan="2"><b>Class: Third Year | Semester- VI</b></td>
+                    </tr>
+    </table>
+
+
+    <div class="space"></div>
+
+
+    <table class="table2">
+        
+         <tr>
+            <th class=".th2" style="width: 12%;">Time/Day</th>
+            <th class=".th2" colspan="2" style="width: 20%;" >Monday</th>
+            <th class=".th2" colspan="2" style="width: 20%;">Tuesday</th>
+            <th class=".th2" colspan="2" style="width: 20%;">Wednesday</th>
+            <th class=".th2" colspan="2" style="width: 20%;">Thursday</th>
+            <th class=".th2" colspan="2" style="width: 20%;">Friday</th>
+            <th class=".th2" colspan="2" style="width: 20%;">Saturday</th>
+         </tr>
+         
+         <tr>
+            <td>9:00AM to 10:00AM</td>
+            <td class=".td2" id="dma" rowspan="2">DMA (P) MP Lab-1</td>
+            <td id="mwa" rowspan="2">MWA (P) AP Lab-4</td>
+
+            <td colspan="2"></td>
+
+            <td id="bcvs" colspan="2">BCVS PH C005</td>
+
+            <td id="dma" >DMA MP DLD Lab</td>
+            <td id="mwa" >MWA AP C220</td>
+
+            <td id="cn" rowspan="2">CN (P) B2 AB Lab-1</td>
+            <td id="is" rowspan="2">IS (P) B1 PB Lab-5</td>
+
+            <td id="bcvs"  rowspan="2">BCVS (T) B2 PH Lab-7</td>
+            <td id="cn" rowspan="2">CN (P) B2 AB Lab-1</td>
+         </tr>
+    
+         <tr>
+            <td>10:05AM to 11:05AM</td>
+            <td colspan="2"></td>
+
+            <td id="bcvs" colspan="2">BCVS PH C005</td>
+
+            <td id="ai" colspan="2">AI AP C220</td>              
+         </tr>
+    
+    
+         <tr>
+            <td>11:05AM to 11:15AM</td>
+            <td colspan="12">Short Break</td>
+         </tr>
+    
+    
+         <tr>
+            <td>11:15AM to 12:15AM</td>
+            <td id="ai" rowspan="2">AI (P) B1 AP Lab-1</td>
+            <td id="is" rowspan="2">IS (P) B2 PB Lab-5</td>
+            <!-- Monday ends -->
+            <td id="ai" colspan="2">AI AP C005</td>
+
+            <td id="fca" colspan="2">FCA JB C005</td>
+
+            <td id="is" colspan="2">IS PB C220</td>
+
+            <td id="is" colspan="2">IS PB C005</td>
+
+            <td id="bcvs" rowspan="2">BCVS (T) B1 PH Lab-7</td>
+            <td id="ai" rowspan="2">AI (P) AP Lab-1</td>
+                           
+         </tr>
+
+         <tr>
+            <td>12:20AM to 01:20PM</td>
+            <td id="cn" colspan="2">CN AB C005</td>
+
+            <td id="fca" colspan="2">FCA JB C005</td>
+
+            <td id="is" colspan="2">IS PB C220</td>
+
+            <td id="fca" colspan="2">FCA JB C005</td>
+            
+         </tr>
+
+         <tr>
+            <td>01:20PM to 2:00PM</td>
+            <td colspan="12">Lunch Break</td>
+         </tr>
+
+         <tr>
+            <td>02:00PM to 03:00PM</td>
+            <td id="ai" colspan="2">AI AP C005</td>
+            <td id="dma">DMA MP DLD Lab</td>
+            <td id="mwa" >MWA AP C005</td>
+            
+            <td id="dma" >DMA MP DLD Lab</td>
+            <td id="mwa" >MWA AP C220</td>
+                
+            <td id="cn" colspan="2">CN AB C005</td>
+        
+            <td id="fca" >FCA (T) B1 JB C005</td>
+            <td></td>
+            
+            <td id="cn" colspan="2">CN AB C005</td>
+            
+         </tr>
+
+         <tr>
+            <td>03:05PM to 04:05PM</td>
+            <td id="fca" >FCA (T) B2 JB C005</td>
+            <td></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+         </tr>
+         
+    </table>
+
+        <div class="space"></div>
+        <div class="space"></div>
+
+    <table class="table2">
+            <tr>
+                <th rowspan="2"><b>Name of the Subject</b></th>
+                <th colspan="3"><b>Number of Hours per Week</b></th>
+                <th rowspan="2"><b>Total Teaching Hours<br>per Week</b></th>
+                <th rowspan="2"><b>Faculty Name</b></th>
+            </tr>
+            <tr>
+                <th><b>Theory (L)</b></th>
+                <th><b>Practical (P)</b></th>
+                <th><b>Tutorial (T)</b></th>
+            </tr>
+            <tr  id="cn">
+                <td>Computer Networks(CN)</td>
+                <td>3</td>
+                <td>4</td>
+                <td>0</td>
+                <td>7</td>
+                <td>Prof. Amrita Banerjee (AB)</td>
+            </tr>
+            <tr  id="is">
+                <td>Information Security(IS)</td>
+                <td>3</td>
+                <td>4</td>
+                <td>0</td>
+                <td>7</td>
+                <td>Prof. Pranita Binnar(PB)</td>
+            </tr>
+            <tr  id="ai">
+                <td>Artificial Intelligence(AI)</td>
+                <td>3</td>
+                <td>4</td>
+                <td>0</td>
+                <td>7</td>
+                <td>Prof. Ashishkumar Patel (AP)</td>
+            </tr>
+            <tr  id="fca">
+                <td>Financial & Cost Accounting (FCA)</td>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+                <td>5</td>
+                <td>Prof. Jasmin Bid (JB)</td>
+            </tr>
+            <tr  id="bcvs">
+                <td>Business Communication & Value Science<br>-IV (BCVS)</td>
+                <td>2</td>
+                <td>0</td>
+                <td>4</td>
+                <td>6</td>
+                <td>Prof. Poonam Hans (PH)</td>
+            </tr>
+            <tr  id="dma">
+                <td>Elective-II<br>Data Mining and Analytics (DMA)</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+                <td>Prof. Moumita Pal (MP)</td>
+            </tr>
+            <tr id="mwa">
+                <td>Elective-II<br>Modern Web Application (MWA)</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+                <td>Prof. Ashishkumar Patel (AP)</td>
+            </tr>
+            <tr>
+                <td style="text-align:right !important" colspan="4"><b>Total Class Hours per Week</b></td>
+                <td><b>42</b></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <div class="space"></div>
+
+        <table>
+            <tr></tr>
+            <tr height="100px" !important>
+                <td  ><b>Faculty Incharge</b></td>
+                <td  ></td>
+                <td  ></td>
+                <td  ><b>Dr.P.N.Mukherjee <br> Campus Director</b></td>
+            </tr>
+        </table>
+  
+</body>
+ 
+ 

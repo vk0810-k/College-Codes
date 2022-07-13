@@ -1,0 +1,161 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="document.getElementById('d1').innerHTML = Date()">The time is?</button>
+	<p id = "d1"></p>
+	<button onmouseover="display()" onmouseout="displayout()">Over Me</button>
+	<p id = "d2"></p>
+	<script type="text/javascript">
+		function display()
+		{
+			document.getElementById('d2').innerHTML = "mouse over";
+		}
+		function displayout()
+		{
+			document.getElementById('d2').innerHTML = "mouse out";
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to assign an "onclick" event to a p event</p>
+	<p id="demo">Click me.</p>
+	<script type="text/javascript">
+		document.getElementById("demo").onclick = function()
+		{myFunction()};
+
+		function myFunction()
+		{
+			document.getElementById('demo').innerHTML = "CLICKED";
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>A function is triggered when the user is pressing a key in the input feild</p>
+	<input type="text" onkeydown="myFunction()">
+	<script type="text/javascript">
+		function myFunction()
+		{
+			alert("You pressed a key inside the input feild");
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to assign an "onkeypress" event to an input element.</p>
+	<p>Press a key inside the text feild to set a red backgroung color.</p>
+	<input type="text" id="demo">
+	<script type="text/javascript">
+		document.getElementById("demo").onkeypress = function()
+		{myFunction()};
+		function myFunction()
+		{
+			document.getElementById("demo").style.backgroundColor = "red";
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>Welcome to my Page.</p>
+	<p>Have a Nice Day.</p>
+
+	<form id="first" action="yourpage.html">
+		Enter your name: <input type="text" name="fname">
+		<input type="submit" value="submit">
+	</form>
+
+	<script type="text/javascript">
+		document.getElementById("first").onsubmit = function()
+		{demo()};
+		function demo()
+		{
+			alert("The form was submitted successfully");
+		}
+	</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body onload="myFunction()">
+	
+	<h1>Hello World</h1>
+
+	<script type="text/javascript">
+		function myFunction()
+		{
+			alert("Page is loaded");
+		}
+	</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>This example uses the addEventListener() method to attach a "load" event to an Iframe element.</p>
+
+	<iframe id="myFrame" src="https://www.nmimsnavimumbai.org/"></iframe>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		document.getElementById("myFrame").addEventListener("load",myFunction);
+
+		function myFunction()
+		{
+			document.getElementById("demo").innerHTML = "Iframe is loaded.";
+		}
+	</script>
+</body>
+</html>

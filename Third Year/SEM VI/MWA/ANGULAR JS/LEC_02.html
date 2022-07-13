@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NG-BIND example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="students=['Ramesh','Mahesh','Suresh']">
+		<ul>
+			<li ng-repeat="name in students">
+				{{'Student Name:'+name}}
+			</li>
+		</ul>
+	</div>
+	<h1>Showing ng-bind Directive</h1>
+	<body ng-app="">
+		<div>
+			Sum of 10 + 5 = <span ng-bind="10+5"></span><br/>
+			Please Enter your mobile number: <input type="text" ng-model="mobileno"><br/>
+			Hi,my mobile number is <span ng-bind="mobileno"></span>
+		</div>
+	</body>
+	<div ng-app>
+		<p>Expression:{{5+5}}</p>
+	</div>
+	<body>
+		<p>Change the value of the input field:</p>
+		<div ng-app="" ng-init="myCol='lightblue'">
+			<input style="background-color: {{myCol}}" ng-model="myCol">
+		</div>
+		<p>AngularJS resolves the expression and returns the result.</p>
+		<p>The background color of the input box that you write in the input field.</p>
+	</body>
+	<body>
+		<div ng-app="" ng-init="quantity=3;cost=5">
+			<p>Total in dollar:{{quantity * cost}}</p>
+		</div>
+	</body>
+</body>
+</html>

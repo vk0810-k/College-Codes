@@ -1,0 +1,16 @@
+E Q T R F
+id + * ( ) $
+TQ O O TQ O O O +TQ O O e e FR O O FR O O O e *FR O e e id O O (E) O O
+
+#E->TQ
+#T->FR
+#Q->TQ
+#Q->+TQ
+#T->FR
+#R->e
+#T->e
+#R->*FR
+#R->FR
+#F->id
+#F->(E)
+#Q->e

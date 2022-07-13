@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("p").click(function()
+		{
+			$(this).hide();
+		});
+	});
+</script>
+<body>
+	<h1>.click function</h1>
+	<p>If you click on me, I will disappear.</p>
+	<p>Click me away</p>
+	<p>Click me too!!!</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("p").dblclick(function()
+		{
+			$(this).hide();
+		});
+	});
+</script>
+<body>
+	<h1>dblclick function</h1>
+	<p>If you click on me, I will disappear.</p>
+	<p>Click me away</p>
+	<p>Click me too!!!</p>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("#p1").mouseenter(function()
+		{
+			alert("You entered p1!!")
+		});
+	});
+</script>
+<body>
+	<h1>mouceenter function</h1>
+	<p>If you click on me, I will disappear.</p>
+	<p id="p1">Click me away</p>
+	<p>Click me too!!!</p>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<title>Hover Demo</title>
+<style>
+	ul
+	{
+		margin-left: 20px;
+		color:  blue;
+	}
+	li
+	{
+		cursor: default;
+	}
+	span
+	{
+		color: red;
+	}
+</style>
+<script src="jquery.js"></script>
+<body>
+	<h1>mouse hover function</h1>
+	<ul>
+		<li>Milk</li>
+		<li>Bread</li>
+		<li class="fade">Chips</li>
+		<li class="fade">Socks</li>
+	</ul>
+	<script>
+	$("li").hover(
+		function()
+		{
+			$(this).append($("<span>***</span>"));
+		},
+		function()
+		{
+			$(this).find("span").last().remove();
+		});
+	$("li.fade").hover(function()
+	{
+		$(this).fadeOut(100);
+		$(this).fadeIn(500);
+	})
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+i = 0;
+$(document).ready(function(){
+  $("p").keypress(function(){
+    $("span").text(i += 1);
+  });
+  $("button").click(function(){
+    $("p").keypress();
+  });
+});
+</script>
+</head>
+<body>
+<h1>Keypress</h1>
+<p>Number of Stars for VK: <span>0</span></p>
+
+<button>Click Here to give more stars</button>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("input").focus();
+    $("p").html("focus event triggered");
+  });  
+  $("#btn2").click(function(){
+    $("input").blur();
+    $("p").html("blur event triggered");
+  }); 
+});
+</script>
+</head>
+<body>
+<h1>Focus</h1>
+Enter your name: <input type="text">
+<br><br>
+
+<button id="btn1">Trigger focus event</button>
+<button id="btn2">Trigger blur event</button>
+
+<p style="color:red"></p>
+
+</body>
+</html>

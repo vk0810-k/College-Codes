@@ -1,0 +1,52 @@
+#logo {
+    float: left;
+    width: 200px;
+    padding: 0px 50px 0px 0px;
+}
+
+#navtext {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4px;
+}
+
+.faculty {
+    margin-top: 50px;
+}
+
+.CN {
+    background-color: rgb(175, 235, 86);
+}
+.IS {
+    background-color: rgb(192, 192, 192);
+}
+.AI {
+    background-color: rgb(250, 181, 215);
+}
+.FCA {
+    background-color: rgb(192, 103, 255);
+}
+.BCVS {
+    background-color: rgb(139, 174, 185);
+}
+.DMA {
+    background-color: rgb(253, 191, 18);
+}
+.MWA {
+    background-color: tomato;
+}

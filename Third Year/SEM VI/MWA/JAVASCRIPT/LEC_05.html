@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw and Try</title>
+</head>
+<body>
+	<h2>JavaScript Can Validate Input</h2>
+	<p>Please Input a number between 5 and 10:</p>
+	<input id = "numb">
+	<button type="button" onclick="myFunction()">Submit</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction()
+		{
+			var text,x;
+			x = document.getElementById("numb").value;
+			if(isNaN(x)||x<1||x>10)
+			{
+				text = "Input not valid";
+			}
+			else
+			{
+				text = "Input OK";
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>Enter a number and click OK:</p>
+	<input id = "id1" type = "number" min = "100" max = "300" required>
+	<button onclick="myFunction()">OK</button>
+	<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+	<p id = "demo"></p>
+	<script>
+		function myFunction()
+		{
+			var inpobj = document.getElementById("id1");
+			if(!inpobj.checkValidity())
+			{
+				document.getElementById("demo").innerHTML = inpobj.validationMessage;
+			}
+			else
+			{
+				document.getElementById("demo").innerHTML = "Input OK";
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>Enter a number and click OK:</p>
+	<input id = "id1" type = "number" max = "100">
+	<button onclick="myFunction()">OK</button>
+	<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+	<p id = "demo"></p>
+	<script>
+		function myFunction()
+		{
+			var inpobj = document.getElementById("id1");
+			if(!inpobj.checkValidity())
+			{
+				document.getElementById("demo").innerHTML = inpobj.validationMessage;
+			}
+			else
+			{
+				document.getElementById("demo").innerHTML = "Input OK";
+			}
+		}
+	</script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+</head>
+<body>
+    <form action="abc.jsp" name="myform" method="post" onsubmit="return validateform()">
+        Name: <input type="text" name="name"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="register">
+    </form>
+
+    <script>
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+
+            if(name == null || name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if(password.length < 6) {
+                alert("Password must be atleast 6 characters long");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

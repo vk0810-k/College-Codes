@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NMIMS Time Table</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <img id="logo" src="data:image/png;base64,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" alt="logo">
+            <h3 id="navtext">School of Technology Management & Engineering | Navi Mumbai Campus</h3>
+        </div>
+    </nav>
+    <br>
+    <div class="info">
+        <span><h3>Course: B.Tech.(CSBS)</h3></span>
+        <span><h3>Class: Third Year | Semester- VI</h3></span>
+        <span><h3>AY 2021- 22</h3></span>
+        <span><h3>w.e.f. 06/12/2021</h3></span>
+    </div>
+    <span style="padding-left: 470px;"><b>Class Room:</b>C005 & C220</span>
+
+    <table class="timetable">
+        <tr>
+            <th colspan="2">Date</th>
+            <th colspan="2">    </th>
+            <th colspan="2">    </th>
+            <th colspan="2">    </th>
+            <th colspan="2">    </th>
+            <th colspan="2">    </th>
+            <th colspan="2">    </th>
+        </tr>
+        <tr>
+        <tr>
+            <th colspan="2">Time/Day</th>
+            <th colspan="2">Monday</th>
+            <th colspan="2">Tuesday</th>
+            <th colspan="2">Wednesday</th>
+            <th colspan="2">Thursday</th>
+            <th colspan="2">Friday</th>
+            <th colspan="2">Saturday</th>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td>10:00 AM</td>
+            <td rowspan="2" class="DMA">DMA <br> (P) <br> MP <br> (Programming <br> Lab)</td>
+            <td rowspan="2" class="MWA">MWA <br> (P) <br> AP <br> (Lab-102)</td>
+            <td rowspan="2">                                   </td>
+            <td rowspan="2">                                   </td>
+            <td colspan="2" class="BCVS">BCVS <br> PH <br> (C005)</td>
+            <td class="DMA">DMA <br> MP <br> (Lab-103)</td>
+            <td class="MWA">MWA <br> AP <br> (C220)</td>
+            <td rowspan="2" class="CN">CN(P) <br> B2 <br> AB <br> (Programming <br> Lab)</td>
+            <td rowspan="2" class="IS">IS(P) <br> B1 <br> PB <br> (Data Structure <br> Lab)</td>
+            <td rowspan="2" class="BCVS">BCVS(T) <br> B2 <br> PH <br> (Lab-104)</td>
+            <td rowspan="2" class="CN">CN(P) <br> B1 <br> AB <br> (Programming <br> Lab)</td>
+        </tr>
+        <tr>
+            <td>10:05 AM</td>
+            <td>11:05 AM</td>
+            <td colspan="2" class="BCVS">BCVS <br> PH <br> (C005)</td>
+            <td colspan="2" class="AI">AI <br> AP <br> (C220)</td>
+        </tr>
+        <tr>
+            <td>11:05 AM</td>
+            <td>11:15 AM</td>
+            <td colspan="12"><b>SHORT BREAK</b></td>
+        </tr>
+        <tr>
+            <td>11:15 AM</td>
+            <td>12:15 AM</td>
+            <td rowspan="2" class="AI">AI(P) <br> B1 <br> AP <br> (Programming Lab)</td>
+            <td rowspan="2" class="IS">IS(P) <br> B2 <br> PB <br> (Data Structure Lab)</td>
+            <td colspan="2" class="AI">AI <br> AP <br> (C005)</td>
+            <td colspan="2" class="FCA">FCA <br> JB <br> (C005)</td>
+            <td colspan="2" class="IS">IS <br> PB <br> (C220)</td>
+            <td colspan="2" class="IS">IS <br> PB <br> (C005)</td>
+            <td rowspan="2" class="BCVS">BCVS(T) <br> B1 <br> PH <br> (Lab-104)</td>
+            <td rowspan="2" class="AI">AI(P) <br> B2 <br> AP <br> (Programming Lab)</td>
+        </tr>
+        <tr>
+            <td>12:20 PM</td>
+            <td>1:20 PM</td>
+            <td colspan="2" class="CN">CN <br> AB <br> (C005)</td>
+            <td colspan="2" class="FCA">FCA <br> JB <br> (C005)</td>
+            <td colspan="2" class="IS">IS <br> PB <br> (C220)</td>
+            <td colspan="2" class="FCA">FCA <br> JB <br> (C005)</td>
+        </tr>
+        <tr>
+            <td>1:20 PM</td>
+            <td>2:00 PM</td>
+            <td colspan="12"><b>LUNCH BREAK</b></td>
+        </tr>
+        <tr>
+            <td>2:00 PM</td>
+            <td>3:00 PM</td>
+            <td colspan="2" class="AI">AI <br> AP <br> (C005)</td>
+            <td class="DMA">DMA <br> MP <br> (Lab-103)</td>
+            <td class="MWA">MWA <br> AP <br> (C005)</td>
+            <td class="DMA">DMA <br> MP <br> (Lab-103)</td>
+            <td class="MWA">MWA <br> AP <br> (C220)</td>
+            <td colspan="2" class="CN">CN <br> AB <br> (C005)</td>
+            <td class="FCA">FCA(T) <br> B1 <br> JB <br> (C005)</td>
+            <td></td>
+            <td colspan="2" class="CN">CN <br> AB <br> (C220)</td>
+        </tr>
+        <tr>
+            <td>3:05 PM</td>
+            <td>4:05 PM</td>
+            <td class="FCA">FCA(T) <br> B2 <br> JB <br> (C005)</td>
+            <td></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+      </table>
+
+      <table class="faculty">
+          <tr>
+              <th rowspan="2">Name of the Subject</th>
+              <th colspan="3"> Number of Hours per Week</th>
+              <th rowspan="2"> Total Teaching Hours per Week</th>
+              <th rowspan="2"> Faculty Name</th>
+          </tr>
+          <tr>
+              <th>Theory(L)</th>
+              <th>Practical(P)</th>
+              <th>Tutorial(T)</th>
+          </tr>
+          <tr class="CN">
+              <td>Computer Networks(CN)</td>
+              <td>3</td>
+              <td>4</td>
+              <td>0</td>
+              <td>7</td>
+              <td>Prof. Amrita Banerjee(AB)</td>
+          </tr>
+          <tr class="IS">
+              <td>Information Security(IS)</td>
+              <td>3</td>
+              <td>4</td>
+              <td>0</td>
+              <td>7</td>
+              <td>Prof. Pranita Binnar(PB)</td>
+          </tr>
+          <tr class="AI">
+              <td>Artificial Intelligence(AI)</td>
+              <td>3</td>
+              <td>4</td>
+              <td>0</td>
+              <td>7</td>
+              <td>Prof. Ashishkumar Patel(AP)</td>
+          </tr>
+          <tr class="FCA">
+              <td>Financial & Cost Accounting(FCA)</td>
+              <td>3</td>
+              <td>0</td>
+              <td>2</td>
+              <td>5</td>
+              <td>Prof. Jasmin Bid(JB)</td>
+          </tr>
+          <tr class="BCVS">
+              <td>Business Communication & Value Science-IV(BCVS)</td>
+              <td>2</td>
+              <td>0</td>
+              <td>4</td>
+              <td>6</td>
+              <td>Prof. Poonam Hans(PH)</td>
+          </tr>
+          <tr class="DMA">
+              <td><b>Elective-II:</b>Data Mining and Analytics(DMA)</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>5</td>
+              <td>Prof. Moumita Pal(MP)</td>
+          </tr>
+          <tr class="MWA">
+              <td><b>Elective-II:</b>Modern Web Application(MWA)</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>5</td>
+              <td>Prof. Ashishkumar Patel(AP)</td>
+          </tr>
+          <tr>
+              <td colspan="4"><b>Total Class Hours per Week</b></td>
+              <td><b>42</b></td>
+              <td></td>
+          </tr>
+      </table>
+
+      <div class="info" style="margin-top: 50px;">
+        <span><h3>Faculty Incharge</h3></span>
+        <span><h3>Dr.P.N.Mukherjee <br> Campus Director</h3></span>
+    </div>
+</body>
+</html>

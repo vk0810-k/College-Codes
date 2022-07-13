@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Captcha Validation Practical 3</title>  
+    <script type="text/javascript">  
+        function GenerateCaptcha() {  
+            var chr1 = Math.ceil(Math.random() * 10) + '';  
+            var chr2 = Math.ceil(Math.random() * 10) + '';  
+            var chr3 = Math.ceil(Math.random() * 10) + '';  
+  
+            var str = new Array(4).join().replace(/(.|$)/g, function () { return ((Math.random() * 36) | 0).toString(36)[Math.random() < .5 ? "toString" : "toUpperCase"](); });  
+            var captchaCode = str + chr1 + ' ' + chr2 + ' ' + chr3;  
+            document.getElementById("txtCaptcha").value = captchaCode  
+        }  
+  
+        function ValidCaptcha() {  
+            var str1 = removeSpaces(document.getElementById('txtCaptcha').value);  
+            var str2 = removeSpaces(document.getElementById('txtCompare').value);  
+  
+            if (str1 == str2) return true;  
+            return false;  
+        }  
+  
+        function removeSpaces(string) {  
+            return string.split(' ').join('');  
+        }  
+    </script>  
+  
+</head>  
+<body onload="GenerateCaptcha();">  
+   <div style="border: 2px solid gray; width: 700px;">  
+      <h2>Captcha Validation Practical 3</h2>  
+      <form method="post" action="">
+         <p>Your Name:
+            <input type="text" name="textified">
+         </p>
+         <p>Your Age:
+            <input type="text" name="textified">
+         </p>
+         <p>Your Cell Number:
+            <input type="text" name="textified">
+         </p>
+         <p>Your Gender:
+            <input type="radio" name="gender" value="m">Male
+            <input type="radio" name="gender" value="f">Female
+         </p>
+      </form>
+      Enter the Captcha Text:  
+      <input type="text" id="txtCompare" />  
+      <input type="text" id="txtCaptcha" style="text-align: center; border: none; font-weight: bold; font-size: 20px; font-family: Modern" />  
+      <input type="button" id="btnrefresh" value="Refresh" onclick="GenerateCaptcha();" />  
+      <input id="btnValid" type="button" value="Check" onclick="alert(ValidCaptcha());" /> 
+      <button type="submit" form="form1" value="Submit">Submit</button> 
+      <br />  
+      <br />  
+   </div>  
+</body>  
+</html>  

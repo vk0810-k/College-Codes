@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NG-BIND example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src=" "></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<!-- <div ng-app="" ng-init="person={firstName:'NMIMS',lastName:'Mumbai'}">
+		<p>My name is {{person.firstName}}</p>
+		<p>My name is {{person.lastName}}</p>
+	</div> -->
+	<!-- <div ng-app="" ng-init="person={firstName:'NMIMS',lastName:'Mumbai'}">
+		<p>My name is <span ng-bind="person.firstName, person.lastName"></span></p>
+	</div> -->
+	<!-- <div ng-app="" ng-init="points=[1,15,19,2,40]">
+		<p>Third Element is {{points[2]}}</p>
+	</div> -->
+	<!-- <div ng-app="" ng-init="points=[1,15,19,2,40]">
+		<p>The first result is <span ng-bind="points[0]"></span></p>
+	</div>
+ -->
+ 	<!-- <div ng-app="">
+ 		<input ng-model="customers" ng-list/>
+ 		<p>This example will convert your input into an array,one item for each name:</p>
+ 		<pre>{{customers}}</pre>
+ 	</div> -->
+ 	<!-- <p>Press any key within the input box.</p>
+ 	<input ng-keydown="count = count + 1" ng-init="count = 0"/>
+ 	<h1>{{count}}</h1>
+ 	<p>Everytime you press a key in the feild, this will increase the value of the variable "count".	</p> -->
+ 	<h1 ng-style="myObj">Welcome to NMIMS Navi Mumbai.</h1>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) {
+            $scope.myObj = {
+                "color": "white",
+                "background-color": "brown",
+                "font-size": "40px",
+                "padding": "40px"
+            }
+        });
+    </script>
+ </body>
+</html>

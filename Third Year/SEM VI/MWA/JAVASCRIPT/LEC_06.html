@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G_I_M Modifiers</title>
+</head>
+<body>
+    <p>Click the buttonto do a global(g), multiline(m), case insensitive(i) search for "is" at the beginning of each line in a string.</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="strdisp">Input String is: </p>
+    <p id="demo">Regular Expression Result: </p>
+
+    <script>
+        function myFunction() {
+            var str = "Give100%";
+            document.getElementById("strdisp").innerHTML += str;
+            var patt1 = /\d/g;
+            var result = str.match(patt1);
+            document.getElementById("demo").innerHTML += result;
+        }
+    </script>
+</body>
+</html>
