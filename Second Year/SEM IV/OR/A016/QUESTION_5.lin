@@ -1,0 +1,23 @@
+9.2,1,0,1000,(untitled)
+"POM for Windows 5.2 Build 0.121 Taylor edition 12"
+1,1,0,0,0,0,0
+0,1,0,0,1,0,0
+2,False,0,0,0,0,0,0
+3,4
+""
+"X1"
+"X2"
+" "
+"RHS"
+"Maximize"
+"Constraint 1"
+"Constraint 2"
+"Constraint 3"
+4
+Maximize, 0, 2, 3, 0, 0,
+Constraint 1, 0, 10, 5, 1, 600,
+Constraint 2, 0, 6, 20, 1, 600,
+Constraint 3, 0, 8, 10, 1, 600,
+-1, -1
+done
+""

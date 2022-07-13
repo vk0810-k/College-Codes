@@ -1,0 +1,50 @@
+9.2,1,0,1000,(untitled)
+"POM for Windows 5.2 Build 0.121 Taylor edition 12"
+1,2,0,0,0,0,0
+0,1,0,0,1,0,0
+2,False,0,0,0,0,0,0
+14,9
+""
+"X1"
+"X2"
+"X3"
+"X4"
+"X5"
+"X6"
+"X7"
+" "
+"RHS"
+"Minimize"
+"Constraint 1"
+"Constraint 2"
+"Constraint 3"
+"Constraint 4"
+"Constraint 5"
+"Constraint 6"
+"Constraint 7"
+"Constraint 8"
+"Constraint 9"
+"Constraint 10"
+"Constraint 11"
+"Constraint 12"
+"Constraint 13"
+"Constraint 14"
+9
+Minimize, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0,
+Constraint 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 17,
+Constraint 2, 0, 1, 1, 0, 0, 1, 1, 1, 1, 13,
+Constraint 3, 0, 1, 1, 1, 0, 0, 1, 1, 1, 15,
+Constraint 4, 0, 1, 1, 1, 1, 0, 0, 1, 1, 19,
+Constraint 5, 0, 1, 1, 1, 1, 1, 0, 0, 1, 14,
+Constraint 6, 0, 0, 1, 1, 1, 1, 1, 0, 1, 16,
+Constraint 7, 0, 0, 0, 1, 1, 1, 1, 1, 1, 11,
+Constraint 8, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0,
+Constraint 9, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0,
+Constraint 10, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0,
+Constraint 11, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0,
+Constraint 12, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0,
+Constraint 13, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0,
+Constraint 14, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0,
+-1, -1
+done
+""

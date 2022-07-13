@@ -1,0 +1,32 @@
+9.2,1,0,1000,QUESTION 1 A016
+"POM for Windows 5.2 Build 0.121 Taylor edition 12"
+1,2,0,0,0,0,0
+0,1,0,0,1,0,0
+2,False,0,0,0,0,0,0
+4,11
+""
+"X1"
+"X2"
+"X3"
+"X4"
+"X5"
+"X6"
+"X7"
+"X8"
+"X9"
+" "
+"RHS"
+"Minimize"
+"Constraint 1"
+"Constraint 2"
+"Constraint 3"
+"Constraint 4"
+11
+Minimize, 0, 7.3, 6.9, 7.3, 7.5, 7.6, 6, 5.8, 4.3, 4.1, 0, 0,
+Constraint 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 2, 1,
+Constraint 2, 0, .2, .5, .3, .3, .3, .6, .4, .1, .1, 2, .3,
+Constraint 3, 0, .3, .4, .2, .4, .3, .3, .5, .3, .1, 2, .3,
+Constraint 4, 0, .5, .1, .5, .3, .4, .1, .1, .6, .8, 2, .4,
+-1, -1
+done
+""
