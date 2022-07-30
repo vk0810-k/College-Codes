@@ -18,18 +18,18 @@ while True:
         key =[chr(sh) for sh in shuffled]
         key.append(' ')
 
-        print("\n=========================================================")
-        print("            !!!Encrypted Successfully!!!                   ")
+        print("\n============================================")
+        print("         !!!Encrypted Successfully!!!         ")
         print("\nEncypted Text ::")
         for tx in text:
             print(key[charactrize.index(tx)],end="")
         print("\nUsing Key:",key,"\n")
-        print("\n=========================================================")
+        print("\n============================================")
         
 
     elif ch == 2:
-        print("\n=========================================================")
-        print("                   !!!Decryption!!!                        ")
+        print("\n============================================")
+        print("               !!!Decryption!!!               ")
         text = input("Encrypted text:").lower()
         key = eval(input("Key:"))
 
@@ -38,16 +38,16 @@ while True:
         charactrize=[chr(al) for al in alpha]
         charactrize.append(' ')
     
-        print("\n=========================================================")
-        print("               !!!Decrypted Successfully!!!                ")
+        print("\n============================================")
+        print("         !!!Decrypted Successfully!!!         ")
         print("\nDecypted Text ::")
         for tx in text:
             print(charactrize[key.index(tx)],end="")
-        print("\n=========================================================\n")
+        print("\n============================================")
 
     elif ch == 0:
         print("\n============================================")
-        print("Thank You for using the Software ;)")
-        print("Exiting Now.")
-        print("============================================")
+        print("     Thank You for using the Software ;)      ")
+        print("                 Exiting Now.                 ")
+        print("==============================================")
         exit()
