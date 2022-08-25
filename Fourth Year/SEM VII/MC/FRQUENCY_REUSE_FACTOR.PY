@@ -1,6 +1,3 @@
-#!/usr/bin/python
-
-from math import *
 print("Enter i & j values. common (i,j) values are: (1,0), (1,1), (2,0), (2,1), (3,0), (2,2), (3,3)")
 i = int(input("Enter i: "))
 j = int(input("Enter j: "))
