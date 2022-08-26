@@ -32,7 +32,7 @@ def main():
             print("               !!!DES Decryption!!!               ")
             plaintext = DESDecryption(key, ciphertext, isPaddingRequired)
             print()
-            print("Enter the message to be decrypted : ",ciphertext)
+            print("Enter the message to be decrypted : %r" % ciphertext)
             print("Enter the Key : ",key)
             print("Decrypted plaintext is  : ", plaintext)
             print()
