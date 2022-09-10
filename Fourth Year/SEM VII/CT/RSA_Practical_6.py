@@ -1,46 +1,27 @@
-from utils import *
-import random
-
-primes = [i for i in range(100, 500) if is_prime(i)]
-p = random.choice(primes)
-q = random.choice(primes)
+p = int(input("Enter prime no. (p): "))
+q = int(input("Enter prime no. (q): "))
 
 n = p*q
-k = (p-1)*(q-1) 
+print(f"n: {n}")
 
-for e in range(2, k):
-    if gcd(e, k) == 1:
-        break
+tot = (p-1)*(q-1)
+print(f"Totient of n: {tot}")
 
-public_key = (n, e)
+print("Note: Value of E is 1 < E < totient of n & is not a factor of totient of n")
+E = int(input("Enter (E): "))
 
-_, b, _ = extended_gcd(e, k)
-if b < 0:
-    b = b + k
-private_key = (n, b)
-
+i = 1
 while True:
-    ch = int(input('Welcome to RSA Encryption and Decryption Program Made by Varun Khadayate..\n [*] Press 1 for Encryption \n [*] Press 2 for Decryption \n [*] Press 0 to exit..\n \nYour Choice:: '))
+    if(i*E % tot == 1):
+        D = i
+        break
+    i += 1
+print(f"D: {D}")
 
-    if ch == 1:
-        print("\n============================================")
-        print("              !!!!Encryption!!!!              ")
-        message = input('Enter the text to be encrypted: ')
-        encrypted = encrypt(public_key, message)
-        print(f'Encrypted message: {"".join(str(s) for s in encrypted)}')
-        print("\n============================================\n\n")
+pt = 10
 
-    elif ch == 2:
-        print("\n============================================")
-        print("               !!!Decryption!!!               ")
-        decrypted = decrypt(private_key, encrypted)
-        print(f'Enter the text to be decrypted: {"".join(str(s) for s in encrypted)}')
-        print(f'Decrypted message: {"".join(str(s) for s in decrypted)}')
-        print("\n============================================\n\n")
+ct = pow(pt, E) % n
+print(f"Cipher Text: {ct}")
 
-    elif ch == 0:
-        print("\n============================================")
-        print("     Thank You for using the Software ;)      ")
-        print("                 Exiting Now.                 ")
-        print("==============================================")
-        exit()
+pt = pow(ct, D) % n
+print(f"Plain Text: {pt}")
