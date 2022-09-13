@@ -14,5 +14,5 @@ plot(xArray,yArray)
 
 round(a)
      % Description : Rounds each element of a to the nearest integer
-     % Input : 1 number: a
+     % Input : 1 decimal number a
      % Output : 1 number: round number of a

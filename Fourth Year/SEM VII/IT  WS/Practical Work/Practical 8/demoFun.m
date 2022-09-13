@@ -1,0 +1,5 @@
+fplot(@demoFum,[a b])
+fzero(@demoFun,[a b])
+fzero(@demoFun,c)
+fminbnd(@demoFun,a,b)
+quadl(@demoFun,a,b)
