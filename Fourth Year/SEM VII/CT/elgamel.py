@@ -17,6 +17,12 @@ print("The Cipher Text is : ",[c1,c2])
 
 print("Decryption Process")
 x = pow(c1,d)
-print(x)
-PT = (c2/x)%p
+i = 1
+while True:
+    if(i*x % p == 1):
+        D = i
+        break
+    i += 1
+
+PT = (c2*D)%p
 print("The Plain Text Length is : ",PT)

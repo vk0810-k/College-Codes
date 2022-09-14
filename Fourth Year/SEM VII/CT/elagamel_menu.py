@@ -28,9 +28,15 @@ while True:
         print("\n===================================================")
         print("               !!!Decryption Process!!!               ")
         x = pow(c1,d)
-        print(x)
-        PT = (c2*(1/x))%p
-        print("The Plain Text Length is : ",PT)        
+        i = 1
+        while True:
+            if(i*x % p == 1):
+                D = i
+                break
+            i += 1
+
+        PT = (c2*D)%p
+        print("The Plain Text Length is : ",PT)       
         exit()
     
     elif ch == 0:
