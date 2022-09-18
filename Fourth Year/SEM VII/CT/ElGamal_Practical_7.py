@@ -9,10 +9,10 @@ print("\n--------------------------------------------")
 print("\nEncrption Process")
 r = int(input("Enter a random integer : "))
 c1 = pow(e1,r)%p
-print("Computer Cipher text 1 is : ",c1)
+print("Compute Cipher text 1 is : ",c1)
 pt = int(input("Enter the lenght of Plain Text : "))
 c2 = pt * pow(e2,r)%p
-print("Computer Cipher text 2 is : ",c2)
+print("Compute Cipher text 2 is : ",c2)
 print("The Cipher Text is : ",[c1,c2])
 print("\n--------------------------------------------")
 print("\nDecryption Process")
