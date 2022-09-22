@@ -6,9 +6,9 @@ y2=[4 5 8 6 2];
 %Put a bar chart in Figure 1
 figure(1)
 bar(x,y1)
-9%Change the axis settings
+%Change the axis settings
 axis([0 6 1 12]);
-9%Put plots using different y values on one plot with a legend
+%Put plots using different y values on one plot with a legend
 figure(2)
 plot(x,y1,"k")
 hold on
