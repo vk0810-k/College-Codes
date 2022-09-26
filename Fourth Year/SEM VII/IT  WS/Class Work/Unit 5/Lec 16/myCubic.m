@@ -5,4 +5,3 @@
 % 13th Sep 2022
 function y = myCubic(x)
 y = x.^3 + 2*x.^2 - 5*x - 8;
-
